@@ -21,7 +21,7 @@
 <!-- Navegador -->
    <table class="default" align="center" border="3" width="80%" height="80px">
       <ul class="navegar">
-       <td>   <a href="../index.html"> <h3> INICIO X </h3>  </a> </td>
+       <td>   <a href="../index.html"> <h3> INICIO  </h3>  </a> </td>
        <td>   <a target="_blank" href="/pages/atributos.html"> <h3> ATRIBUTOS </h3> </a> </td>
        <td>   <a target="blank" href="../pages/elementos.html"> <h3> ELEMENTOS </h3> </a> </td>
        <td>   <a href="../pages/registro.html"> <h3> REGISTRO </h3></a>  </td>
@@ -30,99 +30,121 @@
    </nav>
   </header>
 
-<body>
-    <!--Sección de registro de usuario-->
-    <div class="registrodatos">
-
-        <!--main de registro-->
-        <main class="grid_main">
-            <br> <br>
-            <h3> REGISTRO COMPRADORES</h3>
-
-            <!-- Formulario Registro-->
-            <form action="" method="">
-                <h4><br> <legend>  No omitir ningún campo al llenar su información.</legend>
-                <br> <div>
-             
-                    <label for="idNombre">Primer Nombre *</label>
-                    <input type="text" id="idNombre1"
-                           name="txtNombre"
-                           required
-                           placeholder="Ingrese primer nombre">
-
-         <br> <br>  <label for="idNombre">Segundo Nombre</label>
-                    <input type="text" id="idNombre2"
-                           name="txtNombre"
-                           placeholder="Ingrese segundo nombre">
+  <body>
+    <table class="default" align="center" border="3" width="80%" height="500px">
+    <tr>
+             <main class="grid_main">
+    
+            <th><h3>DATOS PERSONALES</h3></th>
+                
+                <form action="" method="">
+                                            
+    <tr>      
+   <h5>                             
+     <td>        
+        <div>
+                 
+                    <label for="idIdentificacion" style="color: white;"> Documento de identificacion </label>
+                        <select name="doctoidentificacion" id="doctoidentificacion">
+                    <option value="dpi">DPI</option>
+                    <option value="pasaporte">Pasaporte</option>
+                        </select>
+                            <input type="number" 
+                            name="txtIdentificacion" 
+                            id="idIdentificacion"
+                            required
+                            placeholder="ingrese solo numeros">
+                </h5>
                 </div>
+     </td>  
 
-                <br><div>
-        <br>   <label for="idNombre">Primer Apellido *</label>
-                    <input type="text" id="idApellido1"
-                           name="txtNombre"
-                           required
-                           placeholder="Ingrse Primer apellido">
-
-        <br> <br>   <label for="idNombre">Segundo Apellido</label>
-                    <input type="text" id="idApellido2"
-                           name="txtNombre"
-                           placeholder="Ingrese segundo apellido">
-                </div><br>
+    <tr>        
+               <div>
+    <td>            <label for="idNombre" style="color: white;">Dirección</label>
+                        <input type="text" id="idDireccion" name="txtNombre"placeholder="Ingrese su Dirección">   
+    </td>                    
+                </div>
+    </tr> 
+    </tr>
+    <tr>
                 <div>
-
-                    <label for="date">Fecha nacimiento</label>
-                    <input type="date" name="fechanac" id="fechanac">
+    <td>            <label for="idNombre" style="color: white;">País</label>
+                        <input type="text" id="idPais" name="txtNombre" required placeholder="Ingrse su País">
+    </td>
+                <div>
+    </tr>
+    <td>
+                    <label for="idEmail" style="color: white;"> Email *</label>
+                        <input type="email" name="txtmail" id="idmail" placeholder="Ingrese correo">
+    </td>
                 </div>
-                <br><div>
-                    
-                    <label for="idIdentificacion">Documento de identificacion *</label>
-                    <select name="doctoidentificacion" id="doctoidentificacion">
-                        <option value="dpi">DPI</option>
-                        <option value="pasaporte">Pasaporte</option>
-                    </select>
-
-                    <input type="number"
-                           name="txtIdentificacion"
-                           id="idIdentificacion"
-                           required
-                           placeholder="ingrese solo numeros">
-                </div>
-
-                <br><div>
-                    <label for="idDireccion">Direccion *</label>
-                    <input type="text"
-                           name="txtDireccion"
-                           required
-                           id="idDireccion"
-                           placeholder="Direccion domiciliar">
-                </div>
-
-
-                <br><div>
-                    <label for="idEmail">Email *</label>
-                    <input type="email" name="txtmail" id="idmail" placeholder="Ingrese correo">
-
-        <br>   <br> <label for="idContrasenia">Contraseña *</label>
-                    <input type="text" name="txtcontrasenia" id="contrasenia" placeholder="Ingrese contraseña valida">
-                </div> <br>
-
-                        <!-- Botón de registro,no deja guardar sin campos obligatorios -->
-                <button type="submit" class="boton">Registrarme</button>
-                <br><br><label for="text">¿Ya tienes cuenta? <a href="../pages/login.html">Iniciar sesión</a></label>
-            </h4>
-            </form>
-
-        </main>
-        <footer>
-        </footer>
-
+    <tr>
+                <div>
+    <td>
+                    <label for="idNombre" style="color: white;">Observaciones</label>
+                        <input type="text" id="idObs" name="txtNombre" required placeholder="">
+    </td>
+    </tr>
     </div>
+                <div>
+<tr>
+    <td>
+                                <h3>DATOS LABORALES</h3>
+    </td>
+                            </tr>
+                                <div>
+                                <td>
+                                    <label for="idNombre" style="color: white;">Empresa</label>
+                                    <input type="text" id="idEmpresa"
+                                            name="txtNombre"
+                                            required
+                                            placeholder="Ingrese Empresa">
+                                            <br></td>
+                                <br><div>
+<tr>
+                                    <div>
+                                        <td>
+                                        <label for="idNombre" style="color: white;">Sueldo Ordinario</label>
+                                        <input type="text" id="idSueldo"
+                                                name="txtNombre"
+                                                required
+                                                placeholder="Ingrese Sueldo">
+                                                <br></td>
+                                    <br></div>
+</tr>                           <div>
+                                     <td>
+                                <label for="idNombre" style="color: white;">Bonificación</label>
+                                <input type="text" id="idBonificacion"
+                                        name="txtNombre"
+                                        required
+                                        placeholder="Ingrese Bonificación">
+                                        <br>
+                                    </td>
+                            <br></div>
+<tr>
+                                <div>
+                                    <td>
+                                    <label for="idNombre" style="color: white;">Otras Bonificaciones</label>
+                                    <input type="text" id="idBonificacion"
+                                            name="txtNombre"
+                                            required
+                                            placeholder="">
+                                        </tr>
+                                <br></td><div>
+                         <td>
+                                <button type="submit" class="boton" >ENVIAR DATOS</button>
+                            </td>
+                            </div>
+                        </tr>  
+                    </form>
+
+        </main>       
+    </td>
+    </tr>
+    
 
 
-    <ul>
-        <address>Dania Catro - 1590-15-15081</address>
-    </ul>
-
-    </form>
+</form>
+</table>
 </body>
 </html>
