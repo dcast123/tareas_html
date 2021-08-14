@@ -23,18 +23,19 @@ a{
 
 h1{
   font-family:"Rancho", sans-serif;
-  color:darkblue;
+  color:yellow;
   text-align: center;
 }
 
 h3{
   font-family:"shadow-multiple", sans-serif;
   text-align: center;
-  text-shadow:black;
+  color:white;
 }
 
+
 ul{
-  background-color: darkcyan;
+  background-color:white;
   text-align: center;
 
 }
@@ -42,7 +43,8 @@ ul{
 h4{
   font-family:"canvas";
   text-align: center;
-  text-shadow:black;
+  color:white;
+  text-shadow:white;
 }
 
 /* Diseño Clases*/
@@ -146,7 +148,7 @@ h4{
 
 /*Diseño Paginas*/
 body {
-  background-image: url("https://data.1freewallpapers.com/detail/cat-minimalism-vector-wire.jpg");
+  background-image: url("https://images3.alphacoders.com/112/thumb-1920-1123012.jpg");
   background-repeat: repeat;
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
